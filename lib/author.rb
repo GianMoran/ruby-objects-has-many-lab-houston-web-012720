@@ -16,8 +16,8 @@
     post.author = self
   end
   def add_post_by_title(name)
-    binding.pry
    post = Post.new(name)
+      binding.pry
    post.title = self 
   end
   def self.post_count

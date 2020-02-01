@@ -1,6 +1,6 @@
  require 'pry'
  class Author  
-  attr_accessor :name
+  attr_accessor :name, :title  
   @@all = []
   def initialize(name)
     @name = name
@@ -17,7 +17,7 @@
   end
   def add_post_by_title(name)
    post = Post.new(name)
-   post.title = post
+   post.title = self
   end
   def self.post_count
   Post.all.count

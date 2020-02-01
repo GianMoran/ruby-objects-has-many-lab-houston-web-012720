@@ -1,7 +1,7 @@
 class Post 
   attr_accessor :author,:name,:title 
   @@all = []
-  def initialize(name)
+  def initialize(title)
     @name = name 
     @@all << self
   end
